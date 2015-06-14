@@ -64,7 +64,8 @@ tickers: AAPL, intc, orcl, fb
 There are a couple things the Config class must account for:
 
 1. Collapse whitespace
-1. Ignore all text after the octothorp (consider these comments)
+1. Ignore all text after the octothorpe (the hash key #)
+  1. Consider these comments.
 1. Catetories, as define by the text in brackets (e.g. [PORTFOLIO])
 1. key = value pairs
   1. The fully qualified key name will be `CATEGORY.key`

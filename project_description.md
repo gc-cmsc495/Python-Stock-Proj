@@ -70,7 +70,7 @@ There are a couple things the Config class must account for:
 1. key = value pairs
   1. The fully qualified key name will be `CATEGORY.key`
   1. The values may be lists delimited by commas (e.g. `STRATEGY.markout_periods = [5,10,20]`)
-1. The file is parsed from top to bottome and key/value are overwritten if they appear multiple times
+1. The file is parsed from top to bottom and key/value are overwritten if they appear multiple times
   1. This will allow us to use use the top part of the config file as a template and overwrite with custom settings later in the file.
   1. The interface for the Config class must provide immutable acess methods to the configuration values.
 
@@ -103,7 +103,7 @@ The `markout_length` is in units of `STRATEGY.period_length'.  Every time the in
 
 `exit_date = entry_date + markout_length`
 
-The primary key for the TradeManager is: `ticker, markout_length, indicator.
+The primary key for the TradeManager is: `ticker, markout_length, indicator`
 
 The TradeManager will not allow another entry for that key until after the `exit_date`.  This methodology ensures that
 each event is an indepent as possible.

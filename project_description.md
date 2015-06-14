@@ -1,6 +1,4 @@
-Date: June 14, 2015
-
-Author: Garrett Casey (gc-cmsc495)
+Author: Garrett Casey (@gc-cmsc495)
 
 # Overview and Project Plan
 
